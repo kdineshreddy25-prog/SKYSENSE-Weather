@@ -2,7 +2,10 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { WeatherData } from "../types";
 
 // Fix: Initialize GoogleGenAI with a named apiKey parameter as required by the SDK.
-const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+});
+
 
 const responseSchema = {
   type: Type.OBJECT,

@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Weather Report",
+  "description": "A daily weather report application that uses AI to generate creative and informative weather summaries for any city in the world.",
+  "requestFramePermissions": []
+}
